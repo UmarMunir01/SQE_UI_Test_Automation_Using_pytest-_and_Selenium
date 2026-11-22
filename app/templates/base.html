@@ -87,7 +87,7 @@
   </header>
 
   <!-- Flash messages -->
-  <div id="flash-container" class="fixed top-5 right-5 space-y-3 z-50">
+  <div id="flash-container" class="fixed top-5 right-5 space-y-3 z-50 pointer-events-none">
     {% with messages = get_flashed_messages(with_categories=True) %}
     {% if messages %}
     {% for cat, mess in messages %}
